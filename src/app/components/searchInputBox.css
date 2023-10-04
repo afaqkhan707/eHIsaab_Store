@@ -1,0 +1,41 @@
+.searchInputBox {
+  width: 80%;
+  min-height: 78px;
+  border: 1px solid #d1d1d1;
+  margin: auto;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+.searchField {
+  width: 300px;
+  height: 44px;
+  background: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  display: flex;
+  align-items: center;
+  place-items: center;
+  margin: 0px 20px;
+}
+.searchField .input input {
+  padding: 12px 80px 12px 10px;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+}
+.searchField input:focus {
+  outline: none;
+  border: none;
+}
+button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+button img {
+  width: 40px;
+  height: 40px;
+}
