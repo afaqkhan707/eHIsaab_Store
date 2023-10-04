@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../components/header.css';
+import Link from 'next/link';
 
-const NavigationText = ({ navigation }) => {
+const NavigationText = ({ title, path }) => {
   return (
     <>
       <li>
-        <a>{navigation}</a>
+        <Link href={`${path}`}>{title}</Link>
       </li>
     </>
   );

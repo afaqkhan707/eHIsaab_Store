@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import './signupin.css';
+import Link from 'next/link';
 
 function SigninForm() {
   const [formData, setFormData] = useState({
@@ -48,6 +49,10 @@ function SigninForm() {
           />
         </div>
         <button type='submit'>Sign In</button>
+        <div className='auth-option'>
+          <p>Already have an account? </p>
+          <Link href='/signup'>Sign Up</Link>
+        </div>
       </form>
     </div>
   );

@@ -1,18 +1,16 @@
 import React from 'react';
-import Footer from '@/app/components/Footer';
 import SearchInput from '@/app/components/SearchInput';
-import Header from '@/app/components/header';
 import Banner from '@/app/components/Banner';
+import { DefaultLayout } from '@/app/layouts/DefaultLayout';
 
 function store() {
-  return (
+  const child = (
     <>
-      <Header />
       <Banner />
       <SearchInput />
-      <Footer />
     </>
   );
+  return <DefaultLayout child={child} />;
 }
 
 export default store;

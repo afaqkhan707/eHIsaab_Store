@@ -42,11 +42,12 @@ const Header = () => {
             <Image src={symbol} />
           </div>
           <ul>
-            <NavigationText navigation='Home' />
-            <NavigationText navigation='Stores' />
-            <NavigationText navigation='Products' />
+            <NavigationText title='Home' path='/' />
+            <NavigationText title='Stores' path='/store' />
+            <NavigationText title='Products' path='/' />
             <Image src={cart} />
-            <button onClick={handleSignOut}>Sign Out</button>
+            <NavigationText title='Sign Up' path='/signup' />
+            <NavigationText title='Sign Out' path='/signin' />
           </ul>
         </nav>
       </header>

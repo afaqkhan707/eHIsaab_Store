@@ -10,6 +10,7 @@ import {
   auth,
   createUserWithEmailAndPassword,
 } from '../firebase/firebaseConfig';
+import Link from 'next/link';
 
 function SignupForm() {
   const [formData, setFormData] = useState({
@@ -98,6 +99,10 @@ function SignupForm() {
         <button type='submit' onClick={Submit}>
           Sign Up
         </button>
+        <div className='auth-option'>
+          <p>Don't have an account? </p>
+          <Link href='/signin'>Sign In</Link>
+        </div>
       </form>
     </div>
   );

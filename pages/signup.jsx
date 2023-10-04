@@ -1,9 +1,6 @@
 import SignupForm from '@/app/components/signup';
+import { AuthLayout } from '@/app/layouts/AuthLayout';
 
 export default function SignUP() {
-  return (
-    <div>
-      <SignupForm />
-    </div>
-  );
+  return <AuthLayout child={<SignupForm />} />;
 }
