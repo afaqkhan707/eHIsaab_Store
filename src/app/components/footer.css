@@ -9,7 +9,11 @@
   background-color: #e7e7e7;
   color: #3d3d3d;
 }
-.footer-section img {
-  width: 70px;
+.footer-section .footer-img {
+  width: 75px;
+  height: auto;
+}
+.footer-section #peregrine {
+  width: 45px;
   height: auto;
 }

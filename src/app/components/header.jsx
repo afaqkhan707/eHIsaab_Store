@@ -22,13 +22,8 @@ const Header = () => {
   }, []);
 
   const handleSignOut = () => {
-    signOut(auth)
-      // .then(() => {
-      //   alert('Signed out Successfully...!');
-      // })
-      // .catch((error) => {
-      //   console.log('Error in Sign Out Process...!');
-      // });
+    signOut(auth);
+    window.location.reload();
   };
 
   return (

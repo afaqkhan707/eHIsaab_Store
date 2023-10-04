@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <footer className='footer-section'>
-        <Image src={pineLogo} alt='Pine Logo' />
+        <Image src={eHisaabLogo} alt='Pine Logo' className='footer-img' />
         <p>Team Pregurine JV Pine Technologies</p>
-        <Image src={eHisaabLogo} alt='Pine Logo' />
-        <Image src={Peregrine} />
+        <Image src={pineLogo} alt='Pine Logo' className='footer-img' />
+        <Image src={Peregrine} alt='Peregrine' id='peregrine' />
       </footer>
     </>
   );

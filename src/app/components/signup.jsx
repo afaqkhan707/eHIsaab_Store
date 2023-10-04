@@ -46,6 +46,8 @@ function SignupForm() {
         const errorCode = error.code;
         const errorMessage = error.message;
       });
+    alert('UserCreated Success Fully');
+    setSignInShow(true);
   };
 
   return (
